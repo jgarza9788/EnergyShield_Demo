@@ -16,7 +16,7 @@ Enjoy! :)
 	* [EnergyShieldManager.cs](#EnergyShieldManager.cs)
 	* [Other Scripts](#Other-Scripts)
 * [Shaders](#Shaders)
-	* [Two Shaders](#Two-Shaders)
+	* [Three Shaders](#Three-Shaders)
 	* [Properties](#Properties)
 * [FAQs](#FAQs)
 	* [Why Are Collisions Not Being Detected?](#Why-Are-Collisions-Not-Being-Detected?)
@@ -28,7 +28,7 @@ Questions, suggestions, help needed?
 Contact me at:  
 Email: jgarza9788@gmail.com  
 Cell: 1-818-251-0647  
-Contact Info: [justingarza.net/contact](http://justingarza.net/contact/)
+Contact Info: [justingarza.info/contact](http://justingarza.info/contact/)
 
 ## Description Features
 
@@ -38,6 +38,7 @@ Displays an energy shield/force field effects when impacted by projectiles, or r
 * Renders on simple and complex meshes.
 * Simultaneous impact points support.
 * Support for culling and non-culling.
+* Distortion and Color!
 * Unity Free friendly.
 * Fully commented C# code.
 * Awesome demos!
@@ -117,13 +118,14 @@ Controls the shooting of rays and projectiles.
 
 ## Shaders 
 
-### Two Shaders  
+### Three Shaders  
 There are two shaders provided in this asset.
 
 EnergyShield.shader is the full energy shield you see in the demo. with features like color tinting, distortion, and the collision effects.
 
-EnergyShield_CEO.shader is the collision effects only.
+EnergyShield_CEO.shader is the **C**ollision **E**ffects **O**nly.
 
+EnergyShield_NCO.shader is **N**o **C**ut**O**ff
 
 ### Properties
 There is a set limitation to how many properties a shader can have. This means there is a limit of 10 effects that should occur on the same shield at the same time, since most effects do not last long i do not expect for this to be a problem with most users.
@@ -132,5 +134,6 @@ There is a set limitation to how many properties a shader can have. This means t
 
 ### Why Are Collisions Not Being Detected?
 One reason why a collision is not being detected is because the shield is a child of an object with a rigidbody component. I'm calling this the "Rigidbody_ShieldChild" Problem. The solution to this problem is to have a script on the parent object that will detect the collision (Aka use the OnCollisionEnter method) and trigger the shield effect to occur.
+
 
 
