@@ -8,19 +8,23 @@ Enjoy! :)
 
 ## Table of Contents
 
-* [Contact](#Contact)
-* [Description/Features](#Description-Features)
-* [Terms of Use](#Terms-of-Use)
-* [Overview/Setup](#Overview/Setup)
-* [Scripts](#Scripts)
-	* [EnergyShieldManager.cs](#EnergyShieldManager.cs)
-	* [Other Scripts](#Other-Scripts)
-* [Shaders](#Shaders)
-	* [Three Shaders](#Three-Shaders)
-	* [Properties](#Properties)
-* [FAQs](#FAQs)
-	* [Why Are Collisions Not Being Detected?](#Why-Are-Collisions-Not-Being-Detected?)
+<!-- TOC -->
 
+- [Table of Contents](#table-of-contents)
+- [Contact](#contact)
+- [Description Features](#description-features)
+- [Terms of Use](#terms-of-use)
+- [Overview/Setup](#overviewsetup)
+- [Scripts](#scripts)
+    - [EnergyShieldManager.cs](#energyshieldmanagercs)
+    - [Other Scripts](#other-scripts)
+- [Shaders](#shaders)
+    - [Two Shaders](#two-shaders)
+    - [Properties](#properties)
+- [FAQs](#faqs)
+    - [Why Are Collisions Not Being Detected?](#why-are-collisions-not-being-detected)
+
+<!-- /TOC -->
 
 ## Contact  
 
@@ -115,17 +119,17 @@ Used to rotate the camera.
 ShootOnClick.cs:
 Controls the shooting of rays and projectiles.
 
+ToggleButton,cs:
+controls the opening/closeing of the settings
 
 ## Shaders 
 
-### Three Shaders  
+### Two Shaders  
 There are two shaders provided in this asset.
 
 EnergyShield.shader is the full energy shield you see in the demo. with features like color tinting, distortion, and the collision effects.
 
 EnergyShield_CEO.shader is the **C**ollision **E**ffects **O**nly.
-
-EnergyShield_NCO.shader is **N**o **C**ut**O**ff
 
 ### Properties
 There is a set limitation to how many properties a shader can have. This means there is a limit of 10 effects that should occur on the same shield at the same time, since most effects do not last long i do not expect for this to be a problem with most users.
